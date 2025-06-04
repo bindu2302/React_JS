@@ -4,12 +4,12 @@ It helps developers build fast, dynamic, and interactive web applications by cre
 
 🔹Key Features of React JS:
 Feature	                Description
-🔁 Component-          Based	Build UIs using small, reusable components.
+🔁 Component-Based	   Build UIs using small, reusable components.
 ⚡ Virtual DOM	       Improves performance by updating only what's necessary in the DOM.
 🧠 Declarative	       Describe what the UI should look like, and React takes care of the rendering.
 🧱 JSX	               JavaScript + HTML syntax for writing UI code.
-📦 Unidirectional     Data Flow	Data flows in one direction — from parent to child (via props).
-🔧 Hooks	            Functions like useState and useEffect for managing state and side effects in functional components.
+📦 Unidirectional DataFlow	: Data flows in one direction — from parent to child (via props).
+🔧 Hooks	             Functions like useState and useEffect for managing state and side effects in functional components.
 
 
 🔹Why Use React?
@@ -42,8 +42,8 @@ You write components using JSX.
 React converts JSX into JavaScript behind the scenes.
 React maintains a Virtual DOM in memory.
 On data/state changes, it:
-Compares the new Virtual DOM to the old one
-Updates only the changed parts in the actual DOM
+            Compares the new Virtual DOM to the old one
+            Updates only the changed parts in the actual DOM
 
 🔹Tools That Work Well with React
 React Router → For navigation/routing
