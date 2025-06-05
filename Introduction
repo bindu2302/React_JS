@@ -52,5 +52,11 @@ Axios or fetch → For making API requests
 Tailwind / Bootstrap → For styling
 React Dev Tools → For debugging
 
-
+Setting up a react Project
+--------------------------------
+1. Install Node.js --> node -v 
+2. Install Create React App --> npx create-react-app my-appName
+3.Start the development server 
+--> go to project folder --> cd my-appName
+--> start developemnt server --> npm start
 
