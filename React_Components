@@ -1,0 +1,78 @@
+Definition: In React, components are like the building blocks of your application. A React component is a reusable piece of UI that
+accepts props and returns a React element that describes how a part of the user interface should appear.
+
+Examples
+Imagine you’re constructing a house. You wouldn't make the entire building out of one huge piece, right? Instead, you create it out of many smaller,reusable 
+parts—bricks, windows, doors, and walls. Components in React are just like those smaller parts, making your app easy to build, customize, and maintain.
+
+🔹 Types of Components in React
+There are two main types of components in React:
+1.Functional Components
+2.Class Components
+
+1. ✅ Functional Components
+📌 Definition:
+A functional component is a JavaScript function that returns JSX (React’s syntax extension for describing UI).
+
+📌 Syntax:
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+Or using arrow function:
+
+const Welcome = ({ name }) => <h1>Hello, {name}</h1>;
+
+
+📌 Uses:
+Simpler and easier to read
+Supports React Hooks (like useState, useEffect)
+Preferred in modern React apps
+
+📌 Example:
+function Greeting() {
+  const name = "John";
+  return <p>Hello, {name}!</p>;
+}
+
+
+2. ✅ Class Components
+📌 Definition:
+A class component is an ES6 class that extends React.Component and has a render() method that returns JSX.
+
+📌 Syntax:
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+📌 Uses:
+Used to manage local state and lifecycle methods (before Hooks)
+
+Good for older codebases
+
+📌 Example:
+class Counter extends React.Component {
+  constructor() {
+    super();
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return <p>Count: {this.state.count}</p>;
+  }
+}
+
+🔹 Key Differences
+Feature	              Functional Component	              Class Component
+Syntax	               Function	                          ES6 Class
+State	                 useState Hook	                    this.state
+Lifecycle methods	     useEffect, etc.	                  componentDidMount, etc.
+Code Simplicity	       Shorter, cleaner	                  More boilerplate
+Performance	           Slightly faster	                  Slightly heavier
+Preferred in React	   ✅ Yes (Modern)	                  ❌ Less used in new projects
+
+🔹 Use of Components in React
+Build UIs by breaking into pieces (Header, Footer, Sidebar, etc.)
+Reusability: Use same component with different props
+Maintainability: Easier to update and debug
+Composition: Combine components to create complex UIs
