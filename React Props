@@ -1,1 +1,94 @@
+What Are Props?
+---------------------
+Definition: Props are the inputs you pass from one component to another to control its behavior or appearance. 
+They allow data to pass from one part of your application to another, making your components more flexible and reusable. 
+Think of props like instructions that a parent gives to a child component, telling it what to do or how to show itself.
+
+Why Are Props Important?
+--------------------------------
+Props make your components reusable and dynamic. Instead of writing the same code over and over again, 
+you can use props to change the appearance or actions of a component. This keeps your code cleaner and easier to manage.
+For example: instead of creating three different buttons for three actions, you can make one button component 
+and use props to decide what text it shows and what happens when it’s clicked. This makes your code simpler and makes your components more versatile.
+
+How Do Props Work?
+----------------------------
+Props are passed from a parent component to a child component. They’re like the instructions you give to the child, telling it how to behave or what data to show.
+
+Here’s how it works:
+------------------------------
+1. Define the Parent Component: The parent component holds the information or behavior you want to pass down.
+2. Pass Props to Child Component: You pass props by adding them as attributes to the child component tag.
+3. Access Props in the Child Component: The child component receives these props and uses them to decide how to render itself.
+
+ Syntax
+✅ Passing Props (in parent):
+------------------------
+<Welcome name="Himabindu" />
+
+✅ Receiving Props (in child):
+-------------------------
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+Or using destructuring:
+---------------------------
+function Welcome({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
+
+🧪 Example: Props in Action
+-----------------------------
+App.js (Parent Component)
+
+import React from 'react';
+import Welcome from './Welcome';
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Himabindu" />
+      <Welcome name="Anjali" />
+    </div>
+  );
+}
+export default App;
+
+
+Welcome.js (Child Component)
+---------------------------
+import React from 'react';
+
+function Welcome(props) {
+  return <h2>Welcome, {props.name}!</h2>;
+}
+
+export default Welcome;
+🟰 Output:
+Welcome, Himabindu!
+Welcome, Anjali!
+
+
+🚫 Props Are Read-Only
+------------------------------
+You cannot modify props inside a component:
+props.name = "New Name"; // ❌ Not allowed
+If you need to change data, use state, not props.
+
+🧠 Summary
+-------------------------------------------------------
+| Feature    | Props                                   |
+| ---------- | --------------------------------------- |
+| Type       | Object passed from parent to child      |
+| Mutability | Immutable (read-only)                   |
+| Purpose    | Pass data and configuration to children |
+| Direction  | One-way: Parent ➡️ Child                |
+
+
+ Why are Props Important?
+✅ Reusability: You can reuse the same component with different data.
+🔄 Dynamic Rendering: Pass dynamic values like user data, titles, etc.
+🔗 Communication: Enable parent-to-child communication.
+🧱 Component Customization: Customize how a component behaves or looks using props.
 
