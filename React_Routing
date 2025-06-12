@@ -93,3 +93,38 @@ export default Navbar;
 How React Router Works
 React Router lets your app handle different URLs and show the right components without reloading the entire page. 
 This makes your app faster and gives users a smooth experience by only updating the parts of the page that need to change.
+
+Advantages of React Router:
+
+Single Page Application (SPA) Navigation:
+Allows seamless navigation without reloading the page.
+Improves user experience by only updating specific parts of the UI.
+
+Dynamic Routing:
+Routing can be based on component state, enabling more flexible and powerful navigation structures.
+URL Management
+Provides clean, readable URLs which improve SEO and user understanding of the app's structure.
+
+Nested Routing Support:
+Enables you to define routes within other routes, helping organize large applications logically.
+
+Code Splitting:
+Works well with dynamic imports (React.lazy) to load components only when needed, improving performance.
+
+
+Considerations / Cons of React Router:
+
+Learning Curve for Beginners:
+Understanding nested routes, dynamic parameters, and navigation hooks like useParams, useNavigate can be confusing at first.
+
+Initial Setup:
+Requires setup and import in every file that uses routing. Not as plug-and-play as some may expect.
+
+SEO Limitations in SPAs:
+Client-side routing can limit SEO unless you use server-side rendering (e.g., with Next.js).
+
+Manual Scroll Handling:
+Doesn't automatically scroll to the top on route change; you have to handle that manually.
+
+Can Be Overkill for Small Projects:
+For very simple apps, using React Router may be unnecessary and add complexity.
