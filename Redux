@@ -1,1 +1,6 @@
+What is Redux?
+Redux is a JavaScript library used to manage state in your app. It acts as a central storage room where all your pp's data is kept, making it easy for different parts of your app 
+to access and update data without passing it around through props.
+
+
 
