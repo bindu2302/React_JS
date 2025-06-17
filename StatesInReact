@@ -1,6 +1,6 @@
 🧠 What is State in React?
 Definition:
-In React, state is special data managed inside a component that can change over time. It allows components to be interactive. 
+In React, state is special data managed inside a component that can change over time. It allows components to be interactive 
 Unlike props (which are passed down from parent to child), state is internal and controlled by the component itself.
 
 ❓ Why is State Important?
